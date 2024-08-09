@@ -13,16 +13,70 @@ h1 {
   margin: 0;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .container {
   margin: 0 auto;
-  border: 1px solid #000;
-  width: 1250px;
+  max-width: 900px;
 }
 
 .header {
-  padding: 50px;
+  padding: 40px;
+
+  @media (width >= 600px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .main-heading {
-  text-align: center;
+  text-transform: uppercase;
+}
+
+.navigation-menu {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+  font-size: 20px;
+
+  @media (width >= 600px) {
+    width: 300px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.navigation-menu__item {
+  font-weight: bolder;
+  &.active {
+    color: #946c00;
+  }
+
+  @media (width >= 600px) {
+    &.active {
+      border-bottom: 2px solid #946c00;
+    }
+
+    &:hover {
+      color: #000;
+    }
+  }
 }
