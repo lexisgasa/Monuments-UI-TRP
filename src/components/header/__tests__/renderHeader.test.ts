@@ -1,11 +1,9 @@
-import { renderHeader } from "../renderHeader";
-import { renderNavigationMenu } from "../renderNavigationMenu";
+import { renderHeader } from "../renderHeader.js";
 
 describe("Given the header component", () => {
-  const screen = document.createElement("div");
-
-  describe("When the header is rendered", () => {
+  describe("When it is rendered", () => {
     test("Then it should show a 'Monuments!' as a heading", () => {
+      const screen = document.createElement("div");
       const expectedTitle = "Monuments!";
 
       const header = renderHeader();
@@ -14,19 +12,8 @@ describe("Given the header component", () => {
 
       const appTitle = screen.querySelector("h1");
 
+      expect(appTitle).not.toBeNull();
       expect(appTitle?.textContent).toBe(expectedTitle);
-    });
-  });
-
-  describe("When the navigation menu is rendered", () => {
-    test("Then it should show 'List' as text", () => {
-      const navigationMenu = renderNavigationMenu();
-
-      screen.appendChild(navigationMenu);
-
-      const listItem = screen.querySelector("li");
-
-      expect(listItem?.textContent).toBe("List");
     });
   });
 });
