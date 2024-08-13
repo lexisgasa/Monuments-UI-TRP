@@ -1,4 +1,4 @@
-import { renderNavigationMenu } from "./renderNavigationMenu.js";
+import { renderNavigationMenu } from "../navigationMenu/renderNavigationMenu.js";
 
 export const renderHeader = (): HTMLElement => {
   const header = document.createElement("header");
