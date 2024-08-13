@@ -1,3 +1,4 @@
+import { getMonuments } from "./api/getMonuments.js";
 import { renderApp } from "./components/app/renderApp.js";
 
 const root = document.querySelector(".root");
@@ -9,3 +10,5 @@ if (!root) {
 const app = renderApp();
 
 root.appendChild(app);
+
+await getMonuments("monuments");
