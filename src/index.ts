@@ -1,5 +1,6 @@
 import { getMonuments } from "./api/getMonuments.js";
 import { renderApp } from "./components/app/renderApp.js";
+import "./styles/styles.css";
 
 const root = document.querySelector(".root");
 
