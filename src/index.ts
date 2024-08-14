@@ -14,4 +14,6 @@ const app = renderApp();
 
 root.appendChild(app);
 
-await getMonuments("monuments");
+(async () => {
+  await getMonuments("monuments");
+})();
