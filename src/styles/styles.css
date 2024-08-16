@@ -40,11 +40,10 @@ a {
 .container {
   margin: 0 auto;
   max-width: 1200px;
+  padding: 2.5rem 40px;
 }
 
 .header {
-  padding: 2.5rem 40px;
-
   @media (width >= 600px) {
     display: flex;
     justify-content: space-between;
