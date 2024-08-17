@@ -7,7 +7,6 @@ export const renderCard = (monument: Monument): HTMLElement => {
 
   card.innerHTML = `
     <h2>${monument.name}</h2>
-    <p>descripcion falsika</p>
   `;
 
   return card;
