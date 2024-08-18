@@ -23,5 +23,6 @@
   },
   "rules": {
     "new-cap": ["error", { "capIsNewExceptions": ["Router"] }]
-  }
+  },
+  "ignorePatterns": ["vite.config.ts"]
 }
