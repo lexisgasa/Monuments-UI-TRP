@@ -8,6 +8,10 @@ describe("Given the function renderCard", () => {
       const monumentName = "Sagrada familia";
       const monument: Monument = {
         name: monumentName,
+        description: "",
+        imageUrl: "",
+        country: "",
+        city: "",
       };
 
       const card = renderCard(monument);

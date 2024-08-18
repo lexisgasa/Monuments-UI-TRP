@@ -1,0 +1,14 @@
+.cards__card {
+  padding: 5px;
+}
+
+.card__location {
+  font-style: italic;
+  display: block;
+  text-align: right;
+  margin: 5px 10px;
+}
+
+.card__description {
+  margin: 10px 0;
+}
