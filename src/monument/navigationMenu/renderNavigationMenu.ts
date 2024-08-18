@@ -1,3 +1,5 @@
+import "./renderNavigationMenu.css";
+
 export const renderNavigationMenu = (): HTMLElement => {
   const navigationMenu = document.createElement("nav");
 

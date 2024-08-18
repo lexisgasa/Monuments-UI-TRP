@@ -1,0 +1,6 @@
+.cards__card {
+  text-align: center;
+
+  @media (width >= 600px) {
+  }
+}

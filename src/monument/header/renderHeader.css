@@ -1,0 +1,17 @@
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 2.5rem 40px;
+}
+
+.header {
+  @media (width >= 600px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.main-heading {
+  text-transform: uppercase;
+}

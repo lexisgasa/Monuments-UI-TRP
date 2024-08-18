@@ -1,0 +1,11 @@
+.cards {
+  border: 2px solid black;
+  border-radius: 7px;
+  margin-top: 40px;
+  display: grid;
+  gap: 15px;
+
+  @media (width >= 600px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
