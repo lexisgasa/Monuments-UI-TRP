@@ -9,7 +9,7 @@ export const renderCardList = (monuments: Monument[]): HTMLElement => {
   monuments.forEach((monument) => {
     const card = renderCard(monument);
     const listItem = document.createElement("li");
-    listItem.classList.add("cards__card");
+    listItem.classList.add("cards__container");
     listItem.appendChild(card);
     cardList.appendChild(listItem);
   });

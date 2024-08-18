@@ -8,7 +8,7 @@
   }
 }
 
-.cards__card {
+.cards__container {
   border: 1px solid black;
   border-radius: 7px;
   text-align: center;
