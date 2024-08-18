@@ -1,15 +1,16 @@
+import { type Monument } from "../../types";
 import { renderCard } from "../renderCard";
 
 describe("Given the function renderCard", () => {
   describe("When it receives a monument named 'Sagrada familia'", () => {
-    test("Then it should show a card with the title Sagrada familia", () => {
+    test("Then it should render a card component which has the title 'Sagrada familia'", () => {
       const screen = document.createElement("div");
       const monumentName = "Sagrada familia";
-      const monuments = {
+      const monument: Monument = {
         name: monumentName,
       };
 
-      const card = renderCard(monuments);
+      const card = renderCard(monument);
       screen.appendChild(card);
       const cardTitle = screen.querySelector("h2");
 
