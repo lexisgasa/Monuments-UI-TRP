@@ -6,13 +6,13 @@ export const renderCardList = (monuments: Monument[]): HTMLElement => {
   const cardList = document.createElement("ul");
   cardList.classList.add("cards");
 
-  const card = renderCard(monuments[0]);
-
-  cardList.innerHTML = `
-    <li>${card.outerHTML}</li>
-    <li>${card.outerHTML}</li>
-    <li>${card.outerHTML}</li>
-  `;
+  monuments.forEach((monument) => {
+    const card = renderCard(monument);
+    const listItem = document.createElement("li");
+    listItem.classList.add("cards__card");
+    listItem.appendChild(card);
+    cardList.appendChild(listItem);
+  });
 
   return cardList;
 };
